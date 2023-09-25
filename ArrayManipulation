@@ -1,0 +1,20 @@
+// SPDX-License-Identifier: MIT
+
+pragma solidity ^0.8.0;
+
+import "./ArrayManipulationLibrary.sol";
+
+contract ArrayManipulation {
+
+    using ArrayManipulationLibrary for uint256[];
+
+    // Sorts an array of integers in ascending order.
+    function sort(uint256[] memory array) public pure returns (uint256[] memory) {
+        return array.sort();
+    }
+
+    // Removes duplicate elements from an array of integers.
+    function removeDuplicates(uint256[] memory array) public pure returns (uint256[] memory) {
+        return array.removeDuplicates();
+    }
+}
